@@ -29,3 +29,29 @@ SSH_HOST=IP
 SSH_USER=USUARIO
 SSH_PASSWORD=CONTRASEÑA
 ```
+7. Clonamos nuestro repo en el VPS
+```bash
+git clone <URL>
+```
+8. Updateamos el VPS y descargamos las dependencias
+
+```bash
+apt update
+apt upgrade
+apt install nodejs npm-y
+npm install -g pm2
+```
+
+9. Instalamos dependencias de npm y Probamos a lanzar la app
+
+```bash
+cd <repo>
+npm install 
+node server.js
+```
+
+10. Usamos pm2 para lanzar la app en segundo plano
+
+```bash
+pm2 start server.js --name <nombre>
+```
