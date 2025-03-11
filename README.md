@@ -22,3 +22,10 @@ npm install express
 ```bash
 node server.js
 ```
+6. Lanzamos nuestros vps y creamos los secretos de Github
+
+```
+SSH_HOST=IP
+SSH_USER=USUARIO
+SSH_PASSWORD=CONTRASEÑA
+```
