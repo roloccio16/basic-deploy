@@ -10,3 +10,4 @@ git commit -m "build"
 ```bash
 gh repo create
 ```
+3. Creamos una app para desplegar
