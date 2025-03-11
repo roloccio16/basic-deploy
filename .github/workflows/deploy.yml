@@ -25,5 +25,5 @@ jobs:
 
             - name: Execute command on VPS
               env: 
-                SSHPASS: $ {{ secrets.SSH_PASSWORD }}
-              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "nano test"
+                SSHPASS: ${{ secrets.SSH_PASSWORD }}
+              run: sshpass -e ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "touch test"
