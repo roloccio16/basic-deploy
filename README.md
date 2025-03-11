@@ -55,3 +55,14 @@ node server.js
 ```bash
 pm2 start server.js --name <nombre>
 ```
+
+11. si modificamos la app
+
+```bash
+pm2 stop <nombre>
+git pull
+npm install
+pm2 start server.js --name <nombre>
+```
+
+12. comenzamos a crear el deploy, creamos la carpeta '.github' y dentro otra carpeta 'workflows', por ultimo, dentro, creamos 'deploy.yml'
