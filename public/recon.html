@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recon</title>
+</head>
+<body>
+    <form>
+        <label for="target">Target:</label>
+        <input type="text" id="target" name="target" required>
+        <button type="submit">Submit</button>
+    </form>
+<script>
+    const button = document.querySelector('button');
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log("hiciste click balatro")
+        const domain = document.getElementById('target').value;
+    //   const target = document.querySelector('#target').value;
+    fetch('http://localhost:3000/recon', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                domain: domain,
+                apikey: 'hola'
+            })
+        })
+            .then(response => response.text())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+    });
+
+</script>
+</body>
+</html>

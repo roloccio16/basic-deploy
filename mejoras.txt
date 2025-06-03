@@ -1,0 +1,17 @@
+Logout
+
+mostrar si se ejecuta el recon
+
+que te pregunte la cuenta de github con la que te loggeas no la que tienes logueada directamente
+
+un hub intermedio para que todo este mas ordenado
+
+historial de comandos
+
+historial de logs
+
+que te avise si el dominio que quieres reconocer esta bien escrito
+
+un endpoint donde se almacenen los recons lanzados de tu usuario
+
+
